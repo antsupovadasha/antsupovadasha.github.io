@@ -7,18 +7,14 @@
 - `styles.css` — оформление
 - `script.js` — переключение вкладок и меню
 
-## Как опубликовать на GitHub Pages (адрес dashadesigner.github.io)
+## Адрес сайта
 
-1. Зарегистрируй аккаунт на https://github.com с именем пользователя **dashadesigner**
-   (имя аккаунта = первая часть адреса сайта).
-2. Создай новый репозиторий с названием **dashadesigner.github.io**
-   (Repositories → New). Сделай его **Public**.
-3. Загрузи в репозиторий файлы `index.html`, `styles.css`, `script.js`
-   (кнопка **Add file → Upload files**, перетащи все три файла, затем **Commit changes**).
-4. Зайди в **Settings → Pages**. В разделе *Build and deployment*:
-   - Source: **Deploy from a branch**
-   - Branch: **main** / папка **/(root)** → **Save**
-5. Через 1–2 минуты сайт откроется по адресу: **https://dashadesigner.github.io**
+**https://antsupovadasha.github.io**
+
+Репозиторий: https://github.com/antsupovadasha/antsupovadasha.github.io
+
+Обновление сайта выполняется автоматически: после каждого коммита в ветку `main`
+GitHub Pages пересобирает сайт за 1–2 минуты.
 
 Официальная инструкция: https://docs.github.com/ru/pages/quickstart
 
