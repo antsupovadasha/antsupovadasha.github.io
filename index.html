@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dasha Designer — портфолио</title>
+  <meta name="description" content="Сайт-визитка дизайнера Даши: обо мне, проекты, работы и контакты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Шапка / навигация ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" data-tab="about">dasha<span>designer</span></a>
+      <nav class="nav" id="nav">
+        <button class="nav-link is-active" data-tab="about">Обо мне</button>
+        <button class="nav-link" data-tab="projects">Мои проекты</button>
+        <button class="nav-link" data-tab="works">Работы</button>
+        <button class="nav-link" data-tab="contacts">Контакты</button>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== ОБО МНЕ ===== -->
+    <section class="tab is-active" id="tab-about">
+      <div class="hero">
+        <div class="hero-photo">
+          <!-- Замени src на своё фото: положи файл avatar.jpg рядом с index.html -->
+          <img src="https://placehold.co/400x400/efe9ff/6b4fd6?text=Фото" alt="Фото Даши" />
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">Привет 👋</p>
+          <h1>Меня зовут Даша,<br />я дизайнер</h1>
+          <p class="lead">
+            Здесь короткий текст о тебе: чем занимаешься, какие задачи решаешь,
+            что любишь в дизайне. Замени этот абзац на свой — 2–4 предложения,
+            чтобы человек сразу понял, кто ты и чем можешь быть полезна.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-tab="projects">Смотреть проекты</button>
+            <button class="btn btn-ghost" data-tab="contacts">Связаться</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skill-card">
+          <h3>Что я делаю</h3>
+          <p>UX/UI, веб-дизайн, лендинги, фирменный стиль. Замени на свои направления.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Инструменты</h3>
+          <p>Figma, Photoshop, Illustrator. Перечисли то, чем пользуешься.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Опыт</h3>
+          <p>Пара слов про опыт или подход к работе. Можно указать годы или сферы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== МОИ ПРОЕКТЫ (кейсы) ===== -->
+    <section class="tab" id="tab-projects">
+      <header class="section-head">
+        <h2>Мои проекты</h2>
+        <p>Кейсы с описанием задачи, решения и результата.</p>
+      </header>
+
+      <!-- Кейс 1 -->
+      <article class="case">
+        <div class="case-media">
+          <img src="https://placehold.co/800x500/efe9ff/6b4fd6?text=Кейс+1" alt="Кейс 1" />
+        </div>
+        <div class="case-body">
+          <span class="tag">Веб-дизайн</span>
+          <h3>Название кейса №1</h3>
+          <p>
+            <strong>Задача:</strong> опиши, что нужно было сделать.<br />
+            <strong>Решение:</strong> как ты подошла к задаче, что придумала.<br />
+            <strong>Результат:</strong> чем всё закончилось, какой эффект.
+          </p>
+        </div>
+      </article>
+
+      <!-- Кейс 2 -->
+      <article class="case case--reverse">
+        <div class="case-media">
+          <img src="https://placehold.co/800x500/eafaf1/3aa76d?text=Кейс+2" alt="Кейс 2" />
+        </div>
+        <div class="case-body">
+          <span class="tag">Брендинг</span>
+          <h3>Название кейса №2</h3>
+          <p>
+            <strong>Задача:</strong> текст.<br />
+            <strong>Решение:</strong> текст.<br />
+            <strong>Результат:</strong> текст.
+          </p>
+        </div>
+      </article>
+
+      <!-- Кейс 3 -->
+      <article class="case">
+        <div class="case-media">
+          <img src="https://placehold.co/800x500/fff4e6/e08a1e?text=Кейс+3" alt="Кейс 3" />
+        </div>
+        <div class="case-body">
+          <span class="tag">UX/UI</span>
+          <h3>Название кейса №3</h3>
+          <p>
+            <strong>Задача:</strong> текст.<br />
+            <strong>Решение:</strong> текст.<br />
+            <strong>Результат:</strong> текст.
+          </p>
+        </div>
+      </article>
+
+      <p class="hint">💡 Чтобы добавить кейс — скопируй блок <code>&lt;article class="case"&gt;</code> в index.html и поменяй текст и картинку.</p>
+    </section>
+
+    <!-- ===== РАБОТЫ (галерея) ===== -->
+    <section class="tab" id="tab-works">
+      <header class="section-head">
+        <h2>Работы</h2>
+        <p>Сайты, баннеры, иллюстрации и всё подряд — просто галерея.</p>
+      </header>
+
+      <div class="gallery">
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/efe9ff/6b4fd6?text=Работа+1" alt="Работа 1" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eafaf1/3aa76d?text=Работа+2" alt="Работа 2" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/fff4e6/e08a1e?text=Работа+3" alt="Работа 3" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/fde9ef/d6477f?text=Работа+4" alt="Работа 4" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/e7f0ff/3a6dd6?text=Работа+5" alt="Работа 5" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/f0f0f0/777777?text=Работа+6" alt="Работа 6" /></a>
+      </div>
+
+      <p class="hint">💡 Замени картинки: положи файлы (например <code>work1.jpg</code>) рядом с index.html и укажи <code>src="work1.jpg"</code>.</p>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="tab" id="tab-contacts">
+      <header class="section-head">
+        <h2>Контакты</h2>
+        <p>Напиши мне или посмотри работы на других площадках.</p>
+      </header>
+
+      <div class="contacts">
+        <a class="contact-card" href="https://t.me/username" target="_blank" rel="noopener">
+          <span class="contact-ic">✈️</span>
+          <span class="contact-name">Telegram</span>
+          <span class="contact-sub">@username</span>
+        </a>
+        <a class="contact-card" href="https://www.behance.net/username" target="_blank" rel="noopener">
+          <span class="contact-ic">Be</span>
+          <span class="contact-name">Behance</span>
+          <span class="contact-sub">/username</span>
+        </a>
+        <a class="contact-card" href="https://dribbble.com/username" target="_blank" rel="noopener">
+          <span class="contact-ic">🏀</span>
+          <span class="contact-name">Dribbble</span>
+          <span class="contact-sub">/username</span>
+        </a>
+        <a class="contact-card" href="mailto:antsupov.official@gmail.com">
+          <span class="contact-ic">✉️</span>
+          <span class="contact-name">Почта</span>
+          <span class="contact-sub">написать письмо</span>
+        </a>
+      </div>
+
+      <p class="hint">💡 Поменяй <code>username</code> в ссылках на свои настоящие профили.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dasha Designer · Сделано с любовью к дизайну</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
