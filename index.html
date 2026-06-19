@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dasha Designer — портфолио</title>
-  <meta name="description" content="Портфолио дизайнера Даши: обо мне, проекты, работы и контакты." />
+  <title>Dasha — дизайнер · портфолио</title>
+  <meta name="description" content="Сайт-визитка дизайнера Даши: обо мне, кейсы и контакты." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ===== Шапка / навигация ===== -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo" data-tab="about">Dasha<span>.</span></a>
+  <!-- ===== Навигация ===== -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#" class="logo" data-tab="about">Dasha<span class="logo-dot">.</span></a>
       <nav class="nav" id="nav">
-        <button class="nav-link is-active" data-tab="about">Обо мне</button>
-        <button class="nav-link" data-tab="projects">Проекты</button>
-        <button class="nav-link" data-tab="works">Работы</button>
+        <button class="nav-link is-active" data-tab="about">Обо&nbsp;мне</button>
+        <button class="nav-link" data-tab="cases">Кейсы</button>
         <button class="nav-link" data-tab="contacts">Контакты</button>
       </nav>
       <button class="burger" id="burger" aria-label="Меню">
@@ -31,161 +30,86 @@
 
     <!-- ===== ОБО МНЕ ===== -->
     <section class="tab is-active" id="tab-about">
-      <div class="hero">
-        <div class="hero-photo">
-          <!-- Замени src на своё фото: положи файл avatar.jpg рядом с index.html -->
-          <img src="https://placehold.co/320x320/f2f1ee/9a958c?text=Фото" alt="Фото Даши" />
-        </div>
-        <div class="hero-text">
-          <p class="eyebrow">Дизайнер · UX/UI · графика</p>
-          <h1>Меня зовут Даша.<br />Делаю понятный и&nbsp;красивый дизайн.</h1>
-          <p class="lead">
-            Здесь короткий текст о тебе: чем занимаешься, какие задачи решаешь,
-            что любишь в дизайне. Замени этот абзац на свой — 2–3 предложения.
-          </p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" data-tab="projects">Смотреть проекты</button>
-            <button class="btn btn-ghost" data-tab="contacts">Связаться</button>
-          </div>
-        </div>
-      </div>
+      <p class="eyebrow">Product &amp; UI дизайнер</p>
+      <h1 class="hero-title">
+        Привет, я <span class="accent">Даша</span> —<br />
+        делаю интерфейсы <span class="accent">понятными</span><br />
+        и&nbsp;немного красивее.
+      </h1>
+      <p class="hero-lead">
+        Короткий текст о себе: чем занимаюсь, какие задачи решаю и&nbsp;что люблю
+        в&nbsp;дизайне. Замени этот абзац на&nbsp;свой — два-три предложения, без воды.
+      </p>
 
-      <div class="about-blocks">
-        <div class="about-row">
-          <span class="about-label">Чем занимаюсь</span>
-          <span class="about-value">UX/UI-дизайн, веб-сайты и лендинги, фирменный стиль, графика</span>
-        </div>
-        <div class="about-row">
-          <span class="about-label">Инструменты</span>
-          <span class="about-value">Figma, Photoshop, Illustrator</span>
-        </div>
-        <div class="about-row">
-          <span class="about-label">Опыт</span>
-          <span class="about-value">Напиши пару слов про опыт или подход к работе</span>
+      <div class="skills">
+        <h2 class="block-label"><span class="accent-hand">ключевые навыки</span></h2>
+        <div class="skills-grid">
+          <div class="skill-row">
+            <span class="skill-key">Дизайн</span>
+            <span class="skill-val">UX/UI, веб &amp; мобайл, лендинги, дизайн-системы</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">Инструменты</span>
+            <span class="skill-val">Figma, Framer, Photoshop, Illustrator</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">Ещё умею</span>
+            <span class="skill-val">прототипирование, анимация, чуть-чуть кода</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== ПРОЕКТЫ (кейсы — карточки как на Dribbble) ===== -->
-    <section class="tab" id="tab-projects">
+    <!-- ===== КЕЙСЫ — список карточек ===== -->
+    <section class="tab" id="tab-cases">
       <header class="section-head">
-        <h2>Проекты</h2>
-        <p>Избранные кейсы — нажми на карточку, чтобы раскрыть детали.</p>
+        <h2 class="section-title">Кейсы</h2>
+        <p class="section-sub">Избранные работы — нажми на карточку, чтобы посмотреть&nbsp;подробнее.</p>
       </header>
-
-      <div class="cards">
-        <!-- Кейс 1 -->
-        <article class="card">
-          <button class="card-cover" data-toggle>
-            <img src="https://placehold.co/720x520/eceae5/9a958c?text=Кейс+1" alt="Кейс 1" />
-          </button>
-          <div class="card-info">
-            <div class="chips"><span class="chip">Веб-дизайн</span></div>
-            <h3>Название кейса №1</h3>
-            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
-            <div class="card-details">
-              <p><span class="dt">Задача</span> опиши, что нужно было сделать.</p>
-              <p><span class="dt">Решение</span> как ты подошла к задаче.</p>
-              <p><span class="dt">Результат</span> чем всё закончилось.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Кейс 2 -->
-        <article class="card">
-          <button class="card-cover" data-toggle>
-            <img src="https://placehold.co/720x520/e7ece9/8aa79a?text=Кейс+2" alt="Кейс 2" />
-          </button>
-          <div class="card-info">
-            <div class="chips"><span class="chip">Брендинг</span></div>
-            <h3>Название кейса №2</h3>
-            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
-            <div class="card-details">
-              <p><span class="dt">Задача</span> текст.</p>
-              <p><span class="dt">Решение</span> текст.</p>
-              <p><span class="dt">Результат</span> текст.</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Кейс 3 -->
-        <article class="card">
-          <button class="card-cover" data-toggle>
-            <img src="https://placehold.co/720x520/efe9e2/b09a7e?text=Кейс+3" alt="Кейс 3" />
-          </button>
-          <div class="card-info">
-            <div class="chips"><span class="chip">UX/UI</span></div>
-            <h3>Название кейса №3</h3>
-            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
-            <div class="card-details">
-              <p><span class="dt">Задача</span> текст.</p>
-              <p><span class="dt">Решение</span> текст.</p>
-              <p><span class="dt">Результат</span> текст.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <p class="hint">💡 Чтобы добавить кейс — скопируй блок <code>&lt;article class="card"&gt;</code> в index.html и поменяй текст и картинку.</p>
+      <div class="cards" id="cards"><!-- карточки рендерит script.js --></div>
     </section>
 
-    <!-- ===== РАБОТЫ (галерея) ===== -->
-    <section class="tab" id="tab-works">
-      <header class="section-head">
-        <h2>Работы</h2>
-        <p>Сайты, баннеры, иллюстрации — просто галерея.</p>
-      </header>
-
-      <div class="gallery">
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eceae5/9a958c?text=01" alt="Работа 1" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/e7ece9/8aa79a?text=02" alt="Работа 2" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/efe9e2/b09a7e?text=03" alt="Работа 3" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eae7ec/9a8aa7?text=04" alt="Работа 4" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/ece7e7/a79a8a?text=05" alt="Работа 5" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/f0f0ee/9a9a90?text=06" alt="Работа 6" /></a>
-      </div>
-
-      <p class="hint">💡 Замени картинки: положи файлы (например <code>work1.jpg</code>) рядом с index.html и укажи <code>src="work1.jpg"</code>.</p>
+    <!-- ===== КЕЙС — подробно (Notion-style) ===== -->
+    <section class="tab" id="tab-case">
+      <button class="back" id="back">← все кейсы</button>
+      <article class="case" id="case"><!-- содержимое рендерит script.js --></article>
     </section>
 
     <!-- ===== КОНТАКТЫ ===== -->
     <section class="tab" id="tab-contacts">
-      <header class="section-head">
-        <h2>Контакты</h2>
-        <p>Напиши мне или посмотри работы на других площадках.</p>
-      </header>
+      <p class="eyebrow">На&nbsp;связи</p>
+      <h2 class="hero-title">Давай <span class="accent">поработаем</span> вместе</h2>
+      <p class="hero-lead">Пиши на&nbsp;почту или в&nbsp;телеграм — отвечаю быстро.</p>
 
-      <div class="links">
-        <a class="link-row" href="https://t.me/username" target="_blank" rel="noopener">
-          <span class="link-name">Telegram</span>
-          <span class="link-sub">@username</span>
-          <span class="link-arrow">↗</span>
+      <div class="contacts">
+        <a class="contact" href="mailto:antsupov.official@gmail.com">
+          <span class="contact-key">Почта</span>
+          <span class="contact-val">antsupov.official@gmail.com</span>
+          <span class="contact-arrow">↗</span>
         </a>
-        <a class="link-row" href="https://www.behance.net/username" target="_blank" rel="noopener">
-          <span class="link-name">Behance</span>
-          <span class="link-sub">/username</span>
-          <span class="link-arrow">↗</span>
+        <a class="contact" href="https://t.me/username" target="_blank" rel="noopener">
+          <span class="contact-key">Telegram</span>
+          <span class="contact-val">@username</span>
+          <span class="contact-arrow">↗</span>
         </a>
-        <a class="link-row" href="https://dribbble.com/username" target="_blank" rel="noopener">
-          <span class="link-name">Dribbble</span>
-          <span class="link-sub">/username</span>
-          <span class="link-arrow">↗</span>
+        <a class="contact" href="https://behance.net/username" target="_blank" rel="noopener">
+          <span class="contact-key">Behance</span>
+          <span class="contact-val">behance.net/username</span>
+          <span class="contact-arrow">↗</span>
         </a>
-        <a class="link-row" href="mailto:antsupov.official@gmail.com">
-          <span class="link-name">Почта</span>
-          <span class="link-sub">antsupov.official@gmail.com</span>
-          <span class="link-arrow">↗</span>
+        <a class="contact" href="https://dribbble.com/username" target="_blank" rel="noopener">
+          <span class="contact-key">Dribbble</span>
+          <span class="contact-val">dribbble.com/username</span>
+          <span class="contact-arrow">↗</span>
         </a>
       </div>
-
-      <p class="hint">💡 Поменяй <code>username</code> в ссылках на свои настоящие профили.</p>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Dasha Designer</p>
+      <span class="accent-hand">сделано с любовью</span> · © <span id="year"></span> Dasha
     </div>
   </footer>
 
