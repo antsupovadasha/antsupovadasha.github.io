@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dasha Designer — портфолио</title>
-  <meta name="description" content="Сайт-визитка дизайнера Даши: обо мне, проекты, работы и контакты." />
+  <meta name="description" content="Портфолио дизайнера Даши: обо мне, проекты, работы и контакты." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- ===== Шапка / навигация ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" data-tab="about">dasha<span>designer</span></a>
+      <a href="#" class="logo" data-tab="about">Dasha<span>.</span></a>
       <nav class="nav" id="nav">
         <button class="nav-link is-active" data-tab="about">Обо мне</button>
-        <button class="nav-link" data-tab="projects">Мои проекты</button>
+        <button class="nav-link" data-tab="projects">Проекты</button>
         <button class="nav-link" data-tab="works">Работы</button>
         <button class="nav-link" data-tab="contacts">Контакты</button>
       </nav>
@@ -34,15 +34,14 @@
       <div class="hero">
         <div class="hero-photo">
           <!-- Замени src на своё фото: положи файл avatar.jpg рядом с index.html -->
-          <img src="https://placehold.co/400x400/efe9ff/6b4fd6?text=Фото" alt="Фото Даши" />
+          <img src="https://placehold.co/320x320/f2f1ee/9a958c?text=Фото" alt="Фото Даши" />
         </div>
         <div class="hero-text">
-          <p class="eyebrow">Привет 👋</p>
-          <h1>Меня зовут Даша,<br />я дизайнер</h1>
+          <p class="eyebrow">Дизайнер · UX/UI · графика</p>
+          <h1>Меня зовут Даша.<br />Делаю понятный и&nbsp;красивый дизайн.</h1>
           <p class="lead">
             Здесь короткий текст о тебе: чем занимаешься, какие задачи решаешь,
-            что любишь в дизайне. Замени этот абзац на свой — 2–4 предложения,
-            чтобы человек сразу понял, кто ты и чем можешь быть полезна.
+            что любишь в дизайне. Замени этот абзац на свой — 2–3 предложения.
           </p>
           <div class="hero-actions">
             <button class="btn btn-primary" data-tab="projects">Смотреть проекты</button>
@@ -51,94 +50,99 @@
         </div>
       </div>
 
-      <div class="skills">
-        <div class="skill-card">
-          <h3>Что я делаю</h3>
-          <p>UX/UI, веб-дизайн, лендинги, фирменный стиль. Замени на свои направления.</p>
+      <div class="about-blocks">
+        <div class="about-row">
+          <span class="about-label">Чем занимаюсь</span>
+          <span class="about-value">UX/UI-дизайн, веб-сайты и лендинги, фирменный стиль, графика</span>
         </div>
-        <div class="skill-card">
-          <h3>Инструменты</h3>
-          <p>Figma, Photoshop, Illustrator. Перечисли то, чем пользуешься.</p>
+        <div class="about-row">
+          <span class="about-label">Инструменты</span>
+          <span class="about-value">Figma, Photoshop, Illustrator</span>
         </div>
-        <div class="skill-card">
-          <h3>Опыт</h3>
-          <p>Пара слов про опыт или подход к работе. Можно указать годы или сферы.</p>
+        <div class="about-row">
+          <span class="about-label">Опыт</span>
+          <span class="about-value">Напиши пару слов про опыт или подход к работе</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== МОИ ПРОЕКТЫ (кейсы) ===== -->
+    <!-- ===== ПРОЕКТЫ (кейсы — карточки как на Dribbble) ===== -->
     <section class="tab" id="tab-projects">
       <header class="section-head">
-        <h2>Мои проекты</h2>
-        <p>Кейсы с описанием задачи, решения и результата.</p>
+        <h2>Проекты</h2>
+        <p>Избранные кейсы — нажми на карточку, чтобы раскрыть детали.</p>
       </header>
 
-      <!-- Кейс 1 -->
-      <article class="case">
-        <div class="case-media">
-          <img src="https://placehold.co/800x500/efe9ff/6b4fd6?text=Кейс+1" alt="Кейс 1" />
-        </div>
-        <div class="case-body">
-          <span class="tag">Веб-дизайн</span>
-          <h3>Название кейса №1</h3>
-          <p>
-            <strong>Задача:</strong> опиши, что нужно было сделать.<br />
-            <strong>Решение:</strong> как ты подошла к задаче, что придумала.<br />
-            <strong>Результат:</strong> чем всё закончилось, какой эффект.
-          </p>
-        </div>
-      </article>
+      <div class="cards">
+        <!-- Кейс 1 -->
+        <article class="card">
+          <button class="card-cover" data-toggle>
+            <img src="https://placehold.co/720x520/eceae5/9a958c?text=Кейс+1" alt="Кейс 1" />
+          </button>
+          <div class="card-info">
+            <div class="chips"><span class="chip">Веб-дизайн</span></div>
+            <h3>Название кейса №1</h3>
+            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
+            <div class="card-details">
+              <p><span class="dt">Задача</span> опиши, что нужно было сделать.</p>
+              <p><span class="dt">Решение</span> как ты подошла к задаче.</p>
+              <p><span class="dt">Результат</span> чем всё закончилось.</p>
+            </div>
+          </div>
+        </article>
 
-      <!-- Кейс 2 -->
-      <article class="case case--reverse">
-        <div class="case-media">
-          <img src="https://placehold.co/800x500/eafaf1/3aa76d?text=Кейс+2" alt="Кейс 2" />
-        </div>
-        <div class="case-body">
-          <span class="tag">Брендинг</span>
-          <h3>Название кейса №2</h3>
-          <p>
-            <strong>Задача:</strong> текст.<br />
-            <strong>Решение:</strong> текст.<br />
-            <strong>Результат:</strong> текст.
-          </p>
-        </div>
-      </article>
+        <!-- Кейс 2 -->
+        <article class="card">
+          <button class="card-cover" data-toggle>
+            <img src="https://placehold.co/720x520/e7ece9/8aa79a?text=Кейс+2" alt="Кейс 2" />
+          </button>
+          <div class="card-info">
+            <div class="chips"><span class="chip">Брендинг</span></div>
+            <h3>Название кейса №2</h3>
+            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
+            <div class="card-details">
+              <p><span class="dt">Задача</span> текст.</p>
+              <p><span class="dt">Решение</span> текст.</p>
+              <p><span class="dt">Результат</span> текст.</p>
+            </div>
+          </div>
+        </article>
 
-      <!-- Кейс 3 -->
-      <article class="case">
-        <div class="case-media">
-          <img src="https://placehold.co/800x500/fff4e6/e08a1e?text=Кейс+3" alt="Кейс 3" />
-        </div>
-        <div class="case-body">
-          <span class="tag">UX/UI</span>
-          <h3>Название кейса №3</h3>
-          <p>
-            <strong>Задача:</strong> текст.<br />
-            <strong>Решение:</strong> текст.<br />
-            <strong>Результат:</strong> текст.
-          </p>
-        </div>
-      </article>
+        <!-- Кейс 3 -->
+        <article class="card">
+          <button class="card-cover" data-toggle>
+            <img src="https://placehold.co/720x520/efe9e2/b09a7e?text=Кейс+3" alt="Кейс 3" />
+          </button>
+          <div class="card-info">
+            <div class="chips"><span class="chip">UX/UI</span></div>
+            <h3>Название кейса №3</h3>
+            <p class="card-lead">Короткое описание в одну строку — про что проект.</p>
+            <div class="card-details">
+              <p><span class="dt">Задача</span> текст.</p>
+              <p><span class="dt">Решение</span> текст.</p>
+              <p><span class="dt">Результат</span> текст.</p>
+            </div>
+          </div>
+        </article>
+      </div>
 
-      <p class="hint">💡 Чтобы добавить кейс — скопируй блок <code>&lt;article class="case"&gt;</code> в index.html и поменяй текст и картинку.</p>
+      <p class="hint">💡 Чтобы добавить кейс — скопируй блок <code>&lt;article class="card"&gt;</code> в index.html и поменяй текст и картинку.</p>
     </section>
 
     <!-- ===== РАБОТЫ (галерея) ===== -->
     <section class="tab" id="tab-works">
       <header class="section-head">
         <h2>Работы</h2>
-        <p>Сайты, баннеры, иллюстрации и всё подряд — просто галерея.</p>
+        <p>Сайты, баннеры, иллюстрации — просто галерея.</p>
       </header>
 
       <div class="gallery">
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/efe9ff/6b4fd6?text=Работа+1" alt="Работа 1" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eafaf1/3aa76d?text=Работа+2" alt="Работа 2" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/fff4e6/e08a1e?text=Работа+3" alt="Работа 3" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/fde9ef/d6477f?text=Работа+4" alt="Работа 4" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/e7f0ff/3a6dd6?text=Работа+5" alt="Работа 5" /></a>
-        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/f0f0f0/777777?text=Работа+6" alt="Работа 6" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eceae5/9a958c?text=01" alt="Работа 1" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/e7ece9/8aa79a?text=02" alt="Работа 2" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/efe9e2/b09a7e?text=03" alt="Работа 3" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/eae7ec/9a8aa7?text=04" alt="Работа 4" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/ece7e7/a79a8a?text=05" alt="Работа 5" /></a>
+        <a class="gallery-item" href="#"><img src="https://placehold.co/600x600/f0f0ee/9a9a90?text=06" alt="Работа 6" /></a>
       </div>
 
       <p class="hint">💡 Замени картинки: положи файлы (например <code>work1.jpg</code>) рядом с index.html и укажи <code>src="work1.jpg"</code>.</p>
@@ -151,26 +155,26 @@
         <p>Напиши мне или посмотри работы на других площадках.</p>
       </header>
 
-      <div class="contacts">
-        <a class="contact-card" href="https://t.me/username" target="_blank" rel="noopener">
-          <span class="contact-ic">✈️</span>
-          <span class="contact-name">Telegram</span>
-          <span class="contact-sub">@username</span>
+      <div class="links">
+        <a class="link-row" href="https://t.me/username" target="_blank" rel="noopener">
+          <span class="link-name">Telegram</span>
+          <span class="link-sub">@username</span>
+          <span class="link-arrow">↗</span>
         </a>
-        <a class="contact-card" href="https://www.behance.net/username" target="_blank" rel="noopener">
-          <span class="contact-ic">Be</span>
-          <span class="contact-name">Behance</span>
-          <span class="contact-sub">/username</span>
+        <a class="link-row" href="https://www.behance.net/username" target="_blank" rel="noopener">
+          <span class="link-name">Behance</span>
+          <span class="link-sub">/username</span>
+          <span class="link-arrow">↗</span>
         </a>
-        <a class="contact-card" href="https://dribbble.com/username" target="_blank" rel="noopener">
-          <span class="contact-ic">🏀</span>
-          <span class="contact-name">Dribbble</span>
-          <span class="contact-sub">/username</span>
+        <a class="link-row" href="https://dribbble.com/username" target="_blank" rel="noopener">
+          <span class="link-name">Dribbble</span>
+          <span class="link-sub">/username</span>
+          <span class="link-arrow">↗</span>
         </a>
-        <a class="contact-card" href="mailto:antsupov.official@gmail.com">
-          <span class="contact-ic">✉️</span>
-          <span class="contact-name">Почта</span>
-          <span class="contact-sub">написать письмо</span>
+        <a class="link-row" href="mailto:antsupov.official@gmail.com">
+          <span class="link-name">Почта</span>
+          <span class="link-sub">antsupov.official@gmail.com</span>
+          <span class="link-arrow">↗</span>
         </a>
       </div>
 
@@ -181,7 +185,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Dasha Designer · Сделано с любовью к дизайну</p>
+      <p>© <span id="year"></span> Dasha Designer</p>
     </div>
   </footer>
 

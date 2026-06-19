@@ -23,5 +23,12 @@ navLinks.forEach((link) => {
 // Бургер-меню на телефоне
 burger.addEventListener("click", () => nav.classList.toggle("is-open"));
 
+// Раскрытие карточек кейсов по клику на обложку
+document.querySelectorAll("[data-toggle]").forEach((cover) => {
+  cover.addEventListener("click", () => {
+    cover.closest(".card").classList.toggle("is-open");
+  });
+});
+
 // Текущий год в подвале
 document.getElementById("year").textContent = new Date().getFullYear();
