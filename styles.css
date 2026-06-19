@@ -253,6 +253,20 @@ body {
 .case-section p { margin: 0; font-size: 18px; color: var(--ink); }
 .case-section p.muted { color: var(--muted); }
 
+.case-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .18s, opacity .18s;
+}
+.case-link:hover { transform: translateY(-2px); opacity: .92; }
+
 /* ===== Контакты ===== */
 .contacts {
   margin-top: 48px;
